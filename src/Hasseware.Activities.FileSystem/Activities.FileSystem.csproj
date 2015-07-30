@@ -57,7 +57,6 @@
     <Compile Include="Statements\FileCopyOptions.cs" />
     <Compile Include="Statements\FileChangeEvent.cs" />
     <Compile Include="Statements\FileChangeSubscriptionHandle.cs" />
-    <Compile Include="Statements\FileChecksum.cs" />
     <Compile Include="Statements\FolderWatcher.cs" />
     <Compile Include="Statements\ReceiveFileChanges.cs" />
     <Compile Include="Statements\SubscribeFileChanges.cs" />

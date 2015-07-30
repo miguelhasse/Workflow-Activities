@@ -14,4 +14,5 @@ using System.Windows.Markup;
 [assembly: ComVisible(false)]
 
 
-[assembly: XmlnsDefinition("http://schemas.hasseware.com/netfx/2015/xaml/activities", "Hasseware.Activities.Statements", AssemblyName = "Hasseware.Activities.FileSystem")]
+[assembly: XmlnsDefinition("http://schemas.hasseware.com/netfx/2015/xaml/activities",
+    "Hasseware.Activities.Statements", AssemblyName = "Hasseware.Activities.FileSystem")]
