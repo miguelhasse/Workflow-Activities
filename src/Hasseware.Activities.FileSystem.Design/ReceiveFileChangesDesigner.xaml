@@ -1,0 +1,22 @@
+﻿<sap:ActivityDesigner x:Class="Hasseware.Activities.Presentation.ReceiveFileChangesDesigner"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:zaf="http://schemas.hasseware.com/netfx/2015/xaml/activities"
+    xmlns:s="clr-namespace:System;assembly=mscorlib"
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation" 
+    xmlns:sapm="clr-namespace:System.Activities.Presentation.Model;assembly=System.Activities.Presentation"
+    xmlns:zlm="clr-namespace:Hasseware.Windows.Markup"
+    Collapsible="False">
+    <sap:ActivityDesigner.Resources>
+        <ResourceDictionary>
+            <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
+            <sapc:ModelToObjectValueConverter x:Key="ModelToObjectValueConverter" />
+        </ResourceDictionary>
+    </sap:ActivityDesigner.Resources>
+    <Grid>
+        <sap:WorkflowItemPresenter AllowDrop="True" Name="InsideItem" Margin="0,10,0,0"
+            HintText="Drop activity here" Item="{Binding Path=ModelItem.Body.Handler, Mode=TwoWay}"/>
+    </Grid>
+</sap:ActivityDesigner>
