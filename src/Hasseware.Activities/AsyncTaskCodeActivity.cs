@@ -13,10 +13,9 @@ namespace Hasseware.Activities
 			var cts = new CancellationTokenSource();
 			context.UserState = cts;
 
-			var task = ExecuteAsync(context, cts.Token);
 			var tcs = new TaskCompletionSource<bool>(state);
-
-			task.ContinueWith(t =>
+			
+			ExecuteAsync(context, cts.Token).ContinueWith(t =>
 			{
 				if (t.IsFaulted)
 				{
@@ -60,10 +59,9 @@ namespace Hasseware.Activities
 			var cts = new CancellationTokenSource();
 			context.UserState = cts;
 
-			var task = ExecuteAsync(context, cts.Token);
 			var tcs = new TaskCompletionSource<T>(state);
 
-			task.ContinueWith(t =>
+			ExecuteAsync(context, cts.Token).ContinueWith(t =>
 			{
 				if (t.IsFaulted) tcs.TrySetException(t.Exception.InnerExceptions);
 				else if (t.IsCanceled) tcs.TrySetCanceled();
