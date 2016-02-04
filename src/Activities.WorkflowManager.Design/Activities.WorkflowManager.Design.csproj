@@ -52,7 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hasseware.Activities.WorkflowManager\Activities.WorkflowManager.csproj">
+    <ProjectReference Include="..\Activities.WorkflowManager\Activities.WorkflowManager.csproj">
       <Project>{5e0fc8d0-b15e-4e2f-b74f-0b212051e9cd}</Project>
       <Name>Activities.WorkflowManager</Name>
     </ProjectReference>

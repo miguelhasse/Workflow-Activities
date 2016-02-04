@@ -44,7 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hasseware.Activities.WindowsAzure.Storage\Activities.WindowsAzure.Storage.csproj">
+    <ProjectReference Include="..\Activities.WindowsAzure.Storage\Activities.WindowsAzure.Storage.csproj">
       <Project>{f7db15d7-5797-4cda-a1c6-6ac373fede57}</Project>
       <Name>Activities.WindowsAzure.Storage</Name>
     </ProjectReference>
